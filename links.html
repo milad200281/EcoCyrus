@@ -7,18 +7,80 @@
     <style>
       * {
         text-align: center;
-        margin: 2rem;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
+        background: rgb(254, 252, 234); /* Old browsers */
+        background: -moz-linear-gradient(
+          top,
+          rgba(254, 252, 234, 1) 0%,
+          rgba(241, 218, 54, 1) 100%
+        ); /* FF3.6-15 */
+        background: -webkit-linear-gradient(
+          top,
+          rgba(254, 252, 234, 1) 0%,
+          rgba(241, 218, 54, 1) 100%
+        ); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(
+          to bottom,
+          rgba(254, 252, 234, 1) 0%,
+          rgba(241, 218, 54, 1) 100%
+        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+      }
+      .header {
+        margin: 2vh auto;
+        font-size: 5vw;
+        text-decoration: underline dashed 3px red;
+        padding-bottom: 1vh;
+        color: black;
+      }
+      h1{
+        margin-top: 2vh;
+      }
+      .link {
+        margin: 4vh auto;
+        width: 30vw;
+        display: block;
+        text-decoration: none;
+        font-size: 2rem;
+        border: 2px solid red;
+        padding: 0.5em 0.5em;
+        outline: 3px solid black;
+        outline-offset: 2px;
+        background: skyblue;
+        color: black;
+        transition: all 0.3s ease-in-out;
+        text-transform: capitalize;
+      }
+      .link:hover {
+        -webkit-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.75);
+        background: grey;
+        color: white;
+      }
+      .lastItem{
+        padding-bottom: 1rem;
       }
     </style>
   </head>
-  <h1>EcoCyrus</h1>
-  <br /><br />
-  <a href="https://gofund.me/5c415151" target="block">support us</a>
-  <a href="https://instagram.com/milad1mbn?igshid=l5uf53maa010" target="block"
-    >Instagram</a
-  >
-  <a href="https://www.linkedin.com/in/milad-mobini-856a1a1b2" target="block"
-    >Linkedin</a
-  >
-  <body></body>
+  <body>
+    <a href="https://www.ecocyrus.com" class="header">
+      <h1>EcoCyrus</h1>
+    </a>
+    <br /><br />
+    <a href="https://gofund.me/5c415151" class="link" target="block">support us</a>
+    <a href="https://instagram.com/milad1mbn?igshid=l5uf53maa010" class="link" target="block"
+      >instagram</a
+    >
+    <a href="https://www.linkedin.com/in/milad-mobini-856a1a1b2" class="link lastItem" target="block"
+      >linkedin</a
+    >
+  </body>
 </html>
