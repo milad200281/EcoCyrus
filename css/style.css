@@ -173,6 +173,7 @@ body {
   margin: 0.25rem;
   margin-top: 0;
   padding: 0.75rem;
+  text-align: center;
 }
 
 .nav-link {
@@ -276,7 +277,7 @@ body {
 }
 
 .hero-title {
-  margin-top: 15vh;
+  margin-top: 10vh;
   font-size: 3rem;
   color: var(--mainWhite);
   letter-spacing: var(--mainSpacing);
@@ -288,12 +289,12 @@ body {
   text-transform: capitalize;
   color: var(--mainWhite);
   letter-spacing: var(--mainSpacing);
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .hero-btn {
   background: var(--secondaryWhite);
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 1rem;
   color: var(--mainBlue);
   transition: var(--mainTransition);
@@ -308,10 +309,10 @@ body {
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:576px) {
   .header {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4)),
-      url(../img/hero-bg.jpg)center/cover no-repeat fixed;
+      url(../img/hero-bg.jpg)center/cover no-repeat;
   }
 
   .hero {
@@ -324,18 +325,25 @@ body {
   }
 
   .hero-title {
+    margin-top: 15vh;
     font-size: 5rem;
   }
 
   .hero-text {
     font-size: 2.2rem;
+    margin-bottom: 5rem;
   }
 
   .hero-btn {
     font-size: 2.5rem;
   }
 }
-
+@media screen and (min-width:1026px) {
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4)),
+      url(../img/hero-bg.jpg)center/cover no-repeat fixed;
+  }
+}
 @media screen and (max-height: 500px) {
   .hero {
     flex-direction: row-reverse;
@@ -474,7 +482,7 @@ body {
   min-height: 50vh;
   background: linear-gradient(rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.55)),
-    url(../img/dots-blue.jpg) center/cover fixed no-repeat;
+    url(../img/dots-blue.jpg) center/cover no-repeat;
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   display: flex;
   justify-content: center;
@@ -536,7 +544,12 @@ body {
   border-color: var(--mainWhite);
 }
 
-@media screen and (min-width: 776px) {
+@media screen and (min-width: 1026px) {
+  .news-letter-sub {
+    background: linear-gradient(rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)),
+      url(../img/dots-blue.jpg) center/cover fixed no-repeat;
+  }
   .news-letter-title {
     font-size: 3rem;
   }
@@ -600,7 +613,7 @@ body {
 
 .service-detail {
   padding: 2rem 1rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 1.2rem;
 }
 
@@ -634,7 +647,7 @@ body {
 @media screen and (min-width: 992px) {
   .service {
     flex: 0 0 calc(calc(100% / 3) - 3rem);
-    transform: translateY(-50%);
+    transform: translateY(-60%);
     margin-bottom: -5rem;
   }
 
