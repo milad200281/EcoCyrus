@@ -105,8 +105,8 @@ body {
 
 /* end title */
 /* white button */
-.white-btn{
-  padding:0.6rem;
+.white-btn {
+  padding: 0.6rem;
   color: var(--mainBlack);
   background: var(--mainWhite);
   border: 3px solid var(--mainWhite);
@@ -115,11 +115,13 @@ body {
   transition: var(--fastTransition);
   text-transform: uppercase;
 }
-.white-btn:hover{
-    color: var(--mainWhite);
-    background: var(--mainBlack);
-    border-color:var(--mainBlack);
+
+.white-btn:hover {
+  color: var(--mainWhite);
+  background: var(--mainBlack);
+  border-color: var(--mainBlack);
 }
+
 /* end of white button */
 /* nav */
 .nav {
@@ -351,7 +353,10 @@ body {
 /* News */
 .news {
   background: var(--sectionWhite);
-  padding: 1rem 0;
+  background: var(--sectionLightGrey);
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
+  padding: 0;
+  padding-top: 1rem;
   overflow: hidden;
 }
 
@@ -362,11 +367,12 @@ body {
   animation: slideShow 15s infinite;
 }
 
-@keyframes slideShow{
+@keyframes slideShow {
 
-  0%{
+  0% {
     transform: translateX(0%);
   }
+
   35% {
     transform: translateX(0%);
   }
@@ -378,10 +384,12 @@ body {
   85% {
     transform: translateX(-50%);
   }
-  100%{
+
+  100% {
     transform: translateX(0%);
   }
 }
+
 .news-slide {
   margin: 0 auto;
   width: 95vw;
@@ -396,7 +404,7 @@ body {
   /* background: url(../img/city-line.jpg) center/cover no-repeat; */
   min-height: 70vh;
   flex: 0 0 50%;
-  clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 65% 100%, 0 100%);
 }
 
 .news-slide-detail {
@@ -408,38 +416,125 @@ body {
   flex: 0 0 50%;
   justify-content: center;
 }
-.news-slide-detail-center{
-    width: 90%;
-    margin: 0 auto;
+
+.news-slide-detail-center {
+  width: 90%;
+  margin: 0 auto;
 }
+
 .news-slide-header {
-    text-transform: capitalize;
-    font-size: 1.8rem;
-    margin-left: -2rem;
+  text-transform: capitalize;
+  font-size: 1.1rem;
 }
 
 .news-slide-text {
-    margin: 2rem 0;
-    line-height: 2;
-    max-width: 90%;
-    color: var(--lightGrey);
+  font-size: 0.7rem;
+  margin: 2rem 0;
+  line-height: 1.5;
+  max-width: 90%;
+  color: var(--lightGrey);
 }
 
 @media screen and (min-width: 776px) {
   .news-slide-detail {
-      flex: 0 0 40%;
+    flex: 0 0 40%;
   }
+
   .news-slide-img {
     flex: 0 0 60%;
     clip-path: polygon(0 0, 100% 0, 60% 100%, 0 100%);
   }
 
+  .news-slide-header {
+    font-size: 1.8rem;
+    margin-left: -2rem;
+  }
+
+  .news-slide-text {
+    line-height: 2;
+  }
+
+  .news-slide-text {
+    font-size: 1rem;
+  }
+
 }
+
 /* news images */
-.no-news-img{
+.no-news-img {
   background: url(../img/news.jpg) center/cover no-repeat;
 }
-.website-ready-img{
+
+.website-ready-img {
   background: url(../img/city-line.jpg) center/cover no-repeat;
 }
+
 /* end of News */
+/* news letter subscribe */
+.news-letter-sub {
+  min-height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.55),
+   rgba(0, 0, 0, 0.55)),
+    url(../img/dots-blue.jpg) center/cover fixed no-repeat;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+}
+.news-letter-container{
+  padding: 1rem;
+}
+.news-letter-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-letter-title {
+  text-align: center;
+  color: var(--mainWhite);
+  margin: 0;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.news-letter-email {
+  border: none;
+  background: transparent;
+  outline: none;
+  border-bottom: 3px solid var(--mainWhite);
+  font-size: 2rem;
+  margin: 0.5rem 0.7rem;
+  max-width: 85vw;
+}
+
+.news-letter-email::placeholder {
+  color: var(--mainWhite);
+  text-transform: capitalize;
+}
+
+.news-letter-submit {
+  display: inline-block;
+  background: transparent;
+  border: 3px solid var(--mainWhite);
+  outline: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--mainWhite);
+  margin: 0.5rem 0.7rem;
+  transition: var(--mainTransition);
+}
+.news-letter-submit:hover {
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+  border-color: var(--mainWhite);
+}
+@media screen and (min-width: 776px) {
+.news-letter-title{
+  font-size: 3rem;
+}
+}
+/* end of news letter subscribe */
