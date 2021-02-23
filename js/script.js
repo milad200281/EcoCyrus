@@ -5,13 +5,25 @@ $(document).ready(function () {
         $('.nav-links').stop().slideToggle(1000);
     })
     // #####***** nav fixed ******######
-    // $(window).scroll(function () {
-    //     let scroll = $(window).scrollTop();
-    //     if (scroll >= 70) {
-    //         $('#nav').addClass('fixed-nav');
+    $(window).scroll(function () {
+        let scroll = $(window).scrollTop();
+        if (scroll >= 150) {
+            $('#nav').addClass('fixed-nav');
+        }
+        else {
+            $('#nav').removeClass('fixed-nav');
+        }
+    })
+
+    // $('.nonloop').owlCarousel({
+    //     center: true,
+    //     items: 1,
+    //     loop: false,
+    //     margin: 10,
+    //     responsive: {
+    //         600: {
+    //             items: 1
+    //         }
     //     }
-    //     else {
-    //         $('#nav').removeClass('fixed-nav');
-    //     }
-    // })
+    // });
 })
