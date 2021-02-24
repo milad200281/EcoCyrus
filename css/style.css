@@ -756,7 +756,9 @@ body {
   margin-bottom: 4rem;
   font-size: 0.9rem;
 }
-
+.skill-black .skill-text{
+    color: var(--lightGrey);
+}
 .skill .white-btn,
 .skill .black-btn {
   position: absolute;
