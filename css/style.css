@@ -100,7 +100,7 @@ body {
 .title:hover .title-underline {
   width: 300px;
   border-color: var(--mainYellow);
-  background: var(--mainYellow)
+  background: var(--mainYellow);
 }
 
 /* end title */
@@ -872,6 +872,13 @@ body {
   background: var(--sectionWhite);
   background: var(--mainYellow);
 }
+.projects .title{
+  padding-top: 3rem;
+}
+.projects .title:hover .title-underline{
+   border-color: var(--lightBlue);
+   background: var(--lightBlue);
+}
 .project {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
@@ -894,6 +901,7 @@ body {
   transform: translate(-50%, -70%);
   text-align: center;
   opacity: 0;
+  color: var(--mainWhite);
   transition: var(--slowTransition);
 }
 
@@ -914,6 +922,7 @@ body {
 .project-icon {
   color: var(--mainYellow);
   margin-right: 0.5rem;
+  transition: var(--fastTransition);
 }
 
 .project-title {
@@ -934,7 +943,9 @@ body {
 .project:hover .project-detail {
   opacity: 1;
 }
-
+.project-icon:hover{
+  transform: translateY(-0.4rem);
+}
 .projects-container {
   margin: 0 auto;
   display: grid;
@@ -1023,7 +1034,7 @@ body {
 
 .projects-btn {
   background: var(--sectionDarkGrey);
-  margin: 5rem auto;
+  margin: 5rem auto 2rem auto;
   text-align: center;
 
 }
@@ -1033,3 +1044,44 @@ body {
 }
 
 /* end of projects */
+/* support */
+.support{
+  background: var(--sectionWhite);
+}
+.support-center{
+  display: flex;
+  justify-content: center;
+}
+.support-btn {
+  margin:2rem 1rem;
+  margin-top: 1rem;
+  background: var(--mainBlue);
+  font-size: 0.9rem;
+  color: var(--lightBlue);
+  transition: var(--mainTransition);
+  outline: none;
+}
+.support-btn-left{
+  padding:1rem 2rem 1rem 3rem;
+  clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 25% 100%, 15% 50%, 25% 0%);
+}
+.support-btn-right{
+  padding:1rem 3rem 1rem 2rem;
+
+  clip-path: polygon(75% 0%, 90% 50%, 75% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+.support-btn:hover {
+  background: var(--lightBlue);
+  color: var(--mainBlack);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+@media screen and (min-width: 992px) {
+.support-btn {
+  margin: 2rem;
+  font-size: 1.8rem;
+  margin-top: -1rem;
+
+}
+
+}
+/* end of support */
