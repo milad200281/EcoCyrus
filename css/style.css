@@ -707,6 +707,7 @@ body {
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
+  transition: var(--fastTransition);
 }
 
 .skill-white {
@@ -732,6 +733,7 @@ body {
   margin-top: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
+  font-family: var(--bodyFont);
 }
 
 .skill-detail {
@@ -743,6 +745,7 @@ body {
 }
 
 .skill-subtitle {
+  font-family: var(--bodyFont);
   text-transform: uppercase;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
@@ -762,7 +765,9 @@ body {
   bottom: 1rem;
   padding: 0.4rem;
 }
-
+.skill:hover{
+  box-shadow: 3px 7px 3px rgba(120, 120, 120, 0.5);
+}
 .skill:hover .skill-logo {
   transform: translateY(-15rem);
 }
@@ -782,6 +787,7 @@ body {
   }
 
 }
+
 @media screen and (min-width: 992px) {
   .skills-container {
     display: grid;
@@ -798,3 +804,65 @@ body {
 }
 
 /* end of skills */
+/* status */
+.status {
+  background: var(--mainWhite);
+  background: var(--mainBlue);
+}
+
+.status-container {
+  /* width: 90vw; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.single-status {
+  flex: 0 0 calc(100% / 3);
+  text-align: center;
+  padding: 2rem 3rem;
+  color: var(--mainWhite);
+  transition: var(--mainTransition);
+}
+
+.status-icon {
+  font-size: 3rem;
+}
+
+.status-numbers {
+  font-family: var(--mainFont);
+  font-size: 2rem;
+  padding: 1.2rem 0;
+  transition: var(--mainTransition);
+
+}
+
+.status-title {
+  font-size: 1.8rem;
+  font-family: var(--mainFont);
+  text-transform: capitalize;
+}
+
+.single-status:hover {
+  background: var(--lightBlue);
+  color: var(--mainBlack);
+}
+
+.single-status:hover .status-numbers {
+  transform: scale(1.2);
+  color: var(--mainBlack);
+}
+
+@media screen and (min-width:752px) {
+  .status-container {
+    flex-direction: row;
+  }
+
+  .status-title {
+    font-size: 2rem;
+  }
+}
+
+/* end of status */
+/* projects */
