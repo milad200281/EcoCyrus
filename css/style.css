@@ -765,9 +765,11 @@ body {
   bottom: 1rem;
   padding: 0.4rem;
 }
-.skill:hover{
+
+.skill:hover {
   box-shadow: 3px 7px 3px rgba(120, 120, 120, 0.5);
 }
+
 .skill:hover .skill-logo {
   transform: translateY(-15rem);
 }
@@ -866,3 +868,168 @@ body {
 
 /* end of status */
 /* projects */
+.projects {
+  background: var(--sectionWhite);
+  background: var(--mainYellow);
+}
+.project {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  color: var(--mainWhite);
+  overflow: hidden;
+  margin: 0.15rem;
+  display: flex;
+}
+
+.project-photo {
+  max-width: 100%;
+  transition: var(--slowTransition);
+  flex: 1 0 auto;
+}
+
+.project-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  text-align: center;
+  opacity: 0;
+  transition: var(--slowTransition);
+}
+
+.project-detail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+  font-size: 0.5rem;
+  opacity: 0;
+  color: var(--mainYellow);
+  transition: var(--slowTransition);
+}
+
+.project-icon {
+  color: var(--mainYellow);
+  margin-right: 0.5rem;
+}
+
+.project-title {
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+}
+
+.project-subtitle {
+  font-size: 0.8rem;
+}
+
+.project:hover .project-photo {
+  opacity: 0.4;
+  transform: scale(1.3);
+}
+
+.project:hover .project-text,
+.project:hover .project-detail {
+  opacity: 1;
+}
+
+.projects-container {
+  margin: 0 auto;
+  display: grid;
+  max-height: 110vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas:
+    "i1 i1 i2"
+    "i1 i1 i4"
+    "i6 i7 i7"
+    "i6 i5 i5"
+    "i8 i5 i5"
+    "i9 i9 i10"
+    "i3 i3 i3";
+}
+
+.project-1 {
+  grid-area: i1;
+}
+
+.project-2 {
+  grid-area: i2;
+
+}
+
+.project-3 {
+  grid-area: i3;
+
+}
+
+.project-4 {
+  grid-area: i4;
+
+}
+
+.project-5 {
+  grid-area: i5;
+}
+
+.project-6 {
+  grid-area: i6;
+}
+
+.project-7 {
+  grid-area: i7;
+}
+
+.project-8 {
+  grid-area: i8;
+}
+
+.project-9 {
+  grid-area: i9;
+
+}
+
+.project-10 {
+  grid-area: i10;
+}
+
+
+@media screen and (min-width: 752px) {
+  .project-detail {
+    font-size: 1.3rem;
+  }
+  .project-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .project-subtitle {
+    font-size: 1.2rem;
+  }
+
+}
+@media screen and (min-width: 992px) {
+  .projects-container {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "i1 i1 i2 i3 i3"
+      "i1 i1 i4 i5 i5"
+      "i6 i7 i7 i5 i5"
+      "i6 i8 i9 i9 i10";
+  }
+}
+ 
+
+.projects-btn {
+  background: var(--sectionDarkGrey);
+  margin: 5rem auto;
+  text-align: center;
+
+}
+
+.projects .black-btn {
+  padding: 1rem;
+}
+
+/* end of projects */
