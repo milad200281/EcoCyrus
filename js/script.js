@@ -14,6 +14,14 @@ $(document).ready(function () {
             $('#nav').removeClass('fixed-nav');
         }
     })
+    // #####***** smooth scroll ******######
+    $('.smooth-scroll').click(function (link) {
+        link.preventDefault();
+        let target = $(this).attr('href');
+        $('html,body').stop().animate({
+            scrollTop: $(target).offset().top - 70
+        }, "slow");
+    })
 
     // $('.nonloop').owlCarousel({
     //     center: true,
