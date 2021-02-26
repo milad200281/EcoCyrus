@@ -1,0 +1,78 @@
+body {
+    background: var(--sectionDarkGrey);
+}
+
+.nav {
+    display: none;
+    background: var(--lightGrey);
+    transition: var(--fastTransition);
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow: -8px 10px 25px -5px rgba(0, 0, 0, 0.75);
+}
+
+
+/* skills */
+.skills {
+    padding: 7rem 0 4rem 0;
+}
+
+.skills-container {
+    margin: 0 auto;
+    max-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    padding: 1.5rem 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: var(--fastTransition);
+            flex: 0 0 calc(100% - 2rem);
+}
+.skill-text {
+    margin-bottom: 1rem;
+}
+.skills-description{
+    padding: 1rem;
+    width: 100vw;
+}
+.skills-desc{
+    padding: 1rem;
+    padding-top: 0;
+    max-width: 90vw;
+    font-size: 1rem;
+}
+  .skills-container .skill:nth-of-type(1) {
+      order: 0;
+  }
+@media screen and (min-width: 752px) {
+    .skill {
+        flex: 0 0 calc(50% - 2rem);
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .skill {
+        flex: 0 0 calc(25% - 2rem);
+    }
+    .skills-desc {
+        max-width: 70vw;
+        font-size: 1.5rem;
+    }
+  .skills-container .skill:nth-of-type(1) {
+      order: 0;
+  }
+
+  .skills-container .skill:nth-of-type(6) {
+      order: 0;
+  }
+}
+
+/* end of skills */
