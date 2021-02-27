@@ -13,11 +13,39 @@ body {
     box-shadow: -8px 10px 25px -5px rgba(0, 0, 0, 0.75);
 }
 
-
-/* skills */
 .skills {
     padding: 7rem 0 4rem 0;
 }
+
+/* skills filter buttons */
+.skills-filters {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-filter-btn {
+    margin-right: 1rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    border: 3px solid var(--mainBlue);
+    color: var(--mainWhite);
+    background: var(--mainBlue);
+    transition: var(--fastTransition);
+    outline: none;
+    cursor: pointer;
+}
+
+.skills-filter-btn:hover {
+    border-color: var(--mainBlue);
+    color: var(--mainBlue);
+    background: var(--mainWhite);
+}
+
+/* end skills filter buttons */
+/* skills container */
 
 .skills-container {
     margin: 0 auto;
@@ -33,24 +61,29 @@ body {
     position: relative;
     overflow: hidden;
     transition: var(--fastTransition);
-            flex: 0 0 calc(100% - 2rem);
+    flex: 0 0 calc(100% - 2rem);
 }
+
 .skill-text {
     margin-bottom: 1rem;
 }
-.skills-description{
+
+.skills-description {
     padding: 1rem;
     width: 100vw;
 }
-.skills-desc{
+
+.skills-desc {
     padding: 1rem;
     padding-top: 0;
     max-width: 90vw;
     font-size: 1rem;
 }
-  .skills-container .skill:nth-of-type(1) {
-      order: 0;
-  }
+
+.skills-container .skill:nth-of-type(1) {
+    order: 0;
+}
+
 @media screen and (min-width: 752px) {
     .skill {
         flex: 0 0 calc(50% - 2rem);
@@ -62,17 +95,22 @@ body {
     .skill {
         flex: 0 0 calc(25% - 2rem);
     }
+
     .skills-desc {
         max-width: 70vw;
         font-size: 1.5rem;
     }
-  .skills-container .skill:nth-of-type(1) {
-      order: 0;
-  }
 
-  .skills-container .skill:nth-of-type(6) {
-      order: 0;
-  }
+    .skills-container .skill:nth-of-type(1) {
+        order: 0;
+    }
+
+    .skills-container .skill:nth-of-type(6) {
+        order: 0;
+    }
 }
 
-/* end of skills */
+.hideSkill{
+    display: none;
+}
+/* skills container */
