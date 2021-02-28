@@ -26,6 +26,7 @@ body {
 
 .skills-filter-btn {
     margin-right: 1rem;
+    margin-bottom: 1rem;
     padding: 0.8rem 1.2rem;
     font-size: 1.2rem;
     text-transform: capitalize;
@@ -74,8 +75,7 @@ body {
 }
 
 .skills-desc {
-    padding: 1rem;
-    padding-top: 0;
+    padding: 0 1rem;
     max-width: 90vw;
     font-size: 1rem;
 }
