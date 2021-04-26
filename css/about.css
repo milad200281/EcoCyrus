@@ -3,7 +3,6 @@ body {
 }
 
 .nav {
-    display: none;
     background: var(--lightGrey);
     transition: var(--fastTransition);
     display: block;
@@ -33,11 +32,16 @@ body {
     font-size: 1rem;
     line-height: 1.6rem;
 }
+.about-text a{
+    color: var(--mainBlue);
+}
 .about-img-container{
     flex: 0 0 calc(100% - 2rem);
     position: relative;
 }
 .about-img{
+    border: 0.25em solid var(--mainBlue);
+    background: var(--mainBlue);
     width: 100%;
 }
 .about-btns .white-btn{
@@ -70,6 +74,10 @@ body {
 
     .about-img-container {
         flex: 0 0 calc(50% - 2rem);
+    }
+    .about-img {
+        border: none;
+        background: transparent;
     }
     .about-btn {
         font-size: 1.5rem;

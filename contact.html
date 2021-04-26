@@ -9,11 +9,11 @@
       content="eco, cyrus, EcoCyrus, ai, tech, technology, smart, database, programming, code, future, skills, programming, code, talent, bug, html, css, java, python"
     />
     <meta name="author" content="Milad Mobini" />
-    <title>EcoCyrus || About Us</title>
+    <title>EcoCyrus || Contact Us</title>
     <!-- main style css -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- About css -->
-    <link rel="stylesheet" href="css/about.css" />
+    <!-- Contact css -->
+    <link rel="stylesheet" href="css/contact.css" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -64,54 +64,67 @@
     </nav>
     <!-- end of nav -->
     <!-- about -->
-    <section class="about">
+    <section class="contact">
       <!-- title -->
       <div class="title">
         <div class="title-container">
-          <i class="fas fa-user title-icon"></i>
-          <h2 class="title-text">about us</h2>
+          <i class="fas fa-envelope title-icon"></i>
+          <h2 class="title-text">Contact us</h2>
         </div>
         <div class="title-underline"></div>
       </div>
       <!-- end of title -->
-      <!-- about details -->
-      <div class="about-container">
-        <div class="about-img-container">
-          <img
-            src="img/about/about-bg.jpg"
-            alt="ecocyrus about"
-            class="about-img"
-          />
+      <div class="form-container">
+        <form
+          action="https://formspree.io/f/xvovldld"
+          method="POST"
+          class="contact-form"
+        >
+        <div class="form-info">
+
+            <span class="form-error" id="error-fname"> </span>
+            <input
+            type="text"
+            name="firstname"
+            id="form-firstname"
+            class="form-input"
+            placeholder="First Name"
+            />
+            <span class="form-error" id="error-lname"> </span>
+            <input
+            type="text"
+            name="lastname"
+            id="form-lastname"
+            class="form-input"
+            placeholder="Last Name"
+            />
+            <span class="form-error" id="error-email"> </span>
+            <input
+            type="email"
+            name="email"
+            id="form-email"
+            class="form-input"
+            placeholder="Email"
+            />
+            <span class="form-error" id="error-subject"> </span>
+            <input
+            type="text"
+            name="subject"
+            id="form-subject"
+            class="form-input"
+            placeholder="Subject"
+            />
         </div>
-        <div class="about-details">
-          <p class="about-text">
-            EcoCyrus is where the dreams of the owner of it, Milad Mobini,
-            starts. This website is currenlty being used as the mean of online
-            portfolio and getting my name out there. I am be providing different technical
-            services as mentioned in the <a href="https://www.ecocyrus.com/services">servieces page</a>. You can contact me and
-            hire me as a freelancer. My resume has been attached which can be
-            downloaded from the link below. I am a young and enthusiast
-            programmer who is eager to learn and is expanding his knowledge
-            continuously. The future hope of this website is to be an AI company
-            helping to bring humanity and artificial intelligence one step
-            closer to each other.
-          </p>
-          <div class="about-btns">
-            <a
-              href="Milad-Mobini_Resume.docx"
-              target="_blank"
-              class="about-btn white-btn"
-              >download resume</a
-            >
-            <a
-              href="https://www.ecocyrus.com/contact"
-              class="about-btn black-btn"
-              >contact us</a
-            >
+        <div class="form-detail">
+              <span class="form-error" id="error-msg"> </span>
+          <textarea name="message" id="form-message" class="form-input" placeholder="Message" cols="30" rows="10"></textarea>
+          <button type="submit" name="submit_contact" id="form-submit" class="form-submit-btn black-btn" ><i class="fas fa-paper-plane"></i> send</button>
           </div>
+        </form>
+        <div class="popup-feedback">
+            Your Message has been sent successfuly, We will reach back.
         </div>
       </div>
-      <!-- end of about details -->
     </section>
     <!-- end of about -->
 
@@ -127,7 +140,10 @@
       </div>
       <!-- end of title -->
       <div class="support-center">
-        <a href="https://gf.me/u/zks3h5" target="_blank" class="support-btn support-btn-left"
+        <a
+          href="https://gf.me/u/zks3h5"
+          target="_blank"
+          class="support-btn support-btn-left"
           >Support Us</a
         >
         <a
@@ -191,6 +207,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Owl Carousel -->
     <script src="owl/owl.carousel.min.js"></script>
+    <!-- Contact JavaScript -->
+    <script src="js/contact.js"></script>
     <!-- Main JavaScript -->
     <script src="js/script.js"></script>
   </body>

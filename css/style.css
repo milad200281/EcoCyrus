@@ -637,6 +637,9 @@ body {
   text-transform: capitalize;
   font-size: 1.2rem;
 }
+.service-detail a{
+  color: var(--mainBlack);
+}
 
 .service:hover .service-photo {
   transform: scale(1.2);

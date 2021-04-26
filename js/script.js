@@ -22,6 +22,10 @@ $(document).ready(function () {
             scrollTop: $(target).offset().top - 70
         }, "slow");
     })
+    //  #####***** fade pop up feedback ******######
+    setTimeout(()=>{
+        $(".popup-feedback").fadeOut(2000);
+    },2000);
 
     // $('.nonloop').owlCarousel({
     //     center: true,
