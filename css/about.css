@@ -32,6 +32,11 @@ body {
     font-size: 1rem;
     line-height: 1.6rem;
 }
+.about-text::first-letter {
+    color: var(--mainBlue);
+    font-weight: bold;
+    padding-left: 1.5rem;
+}
 .about-text a{
     color: var(--mainBlue);
 }

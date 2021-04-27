@@ -17,7 +17,14 @@
     width: 80%;
     margin: 0 auto;
 }
-
+.contact-desc{
+    padding: 1rem;
+}
+.contact-desc::first-letter {
+    color: var(--mainBlue);
+    font-weight: bold;
+    padding-left: 1.5rem;
+}
 .contact-form {
     display: grid;
     background: var(--sectionLightGrey);
@@ -85,5 +92,9 @@
 
     .form-input {
         font-size: 1.2rem;
+    }
+    .contact-desc {
+        font-size: 1.4rem;
+        padding: 2rem;
     }
 }

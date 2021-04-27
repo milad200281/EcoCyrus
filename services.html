@@ -9,11 +9,11 @@
       content="eco, cyrus, EcoCyrus, ai, tech, technology, smart, database, programming, code, future, skills, programming, code, talent, bug, html, css, java, python"
     />
     <meta name="author" content="Milad Mobini" />
-    <title>EcoCyrus || Contact Us</title>
+    <title>EcoCyrus || Our Services</title>
     <!-- main style css -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Contact css -->
-    <link rel="stylesheet" href="css/contact.css" />
+    <!-- Services css -->
+    <link rel="stylesheet" href="css/services.css" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -63,71 +63,93 @@
       </div>
     </nav>
     <!-- end of nav -->
-    <!-- contact -->
-    <section class="contact">
+    <!-- services -->
+    <section class="services">
       <!-- title -->
       <div class="title">
         <div class="title-container">
-          <i class="fas fa-envelope title-icon"></i>
-          <h2 class="title-text">Contact us</h2>
+          <i class="fas fa-cogs title-icon"></i>
+          <h2 class="title-text">our services</h2>
         </div>
         <div class="title-underline"></div>
       </div>
       <!-- end of title -->
-      <div class="form-container">
-        <p class="contact-desc">
-          Through this page you can send an email to our team. For inquiries about resume, hiring, or any other question you can reach us by this page. We try to get back to you as soon as possible. Also please make sure to fill all fields.  
-        </p>
-        <form
-          action="https://formspree.io/f/xvovldld"
-          method="POST"
-          class="contact-form"
-        >
-        <div class="form-info">
-
-            <span class="form-error" id="error-fname"> </span>
-            <input
-            type="text"
-            name="firstname"
-            id="form-firstname"
-            class="form-input"
-            placeholder="First Name"
-            />
-            <span class="form-error" id="error-lname"> </span>
-            <input
-            type="text"
-            name="lastname"
-            id="form-lastname"
-            class="form-input"
-            placeholder="Last Name"
-            />
-            <span class="form-error" id="error-email"> </span>
-            <input
-            type="email"
-            name="email"
-            id="form-email"
-            class="form-input"
-            placeholder="Email"
-            />
-            <span class="form-error" id="error-subject"> </span>
-            <input
-            type="text"
-            name="subject"
-            id="form-subject"
-            class="form-input"
-            placeholder="Subject"
-            />
+      <div class="services-center">
+        <div class="services-info">
+          <p class="service-parag">We offer different services from java application to web and database development. To hire us, get more information, or for the pricing please don't hesitate to contact us. By simply clicking on each service you can get more information about it. </p>
         </div>
-        <div class="form-detail">
-              <span class="form-error" id="error-msg"> </span>
-          <textarea name="message" id="form-message" class="form-input" placeholder="Message" cols="30" rows="10"></textarea>
-          <button type="submit" name="submit_contact" id="form-submit" class="form-submit-btn black-btn" ><i class="fas fa-paper-plane"></i> send</button>
-          </div>
-        </form>
 
+        <div class="services-contain">
+          <!-- single service -->
+          <article class="serv">
+            <div class="service-info">
+              <h2 class="service-title">java applications</h2>
+            </div>
+            <div class="service-details">
+              <div class="service-image">
+                <img
+                  src="img/services/java-programming.jpg"
+                  alt="java programming"
+                  class="service-pic"
+                />
+              </div>
+              <div class="service-description">
+                <p>
+                  We provide Java applications with Java Swing or JavaFX for the graphical user interface, and a backend of wide variety of java APIs such as net, nio, and JDBC. The codes are fully commented and unit test files will also be provided.
+                </p>
+                <a href="https://www.ecocyrus.com/contact" class="black-btn serv-btn">Hire Us</a>
+              </div>
+            </div>
+          </article>
+          <!-- end of single service -->
+          <!-- single service -->
+          <article class="serv">
+            <div class="service-info">
+              <h2 class="service-title">web development</h2>
+            </div>
+            <div class="service-details">
+              <div class="service-image">
+                <img
+                  src="img/services/web-design.jpg"
+                  alt="java programming"
+                  class="service-pic"
+                />
+              </div>
+              <div class="service-description">
+                <p>
+                  We provide a wide range of web development skills, from static fully responsive websites to E-commerce website with database and CMS (Content management system) for working with the data. We also provide secure websites using PHP and we use a wide variety of APIs and CDNs in our projects. Our web development skills include PHP, JavaScript, CSS, HTML, JQuery, and Boostrap. 
+                </p>
+                <a href="https://www.ecocyrus.com/contact" class="black-btn serv-btn">Hire Us</a>
+              </div>
+            </div>
+          </article>
+          <!-- end of single service -->
+          <!-- single service -->
+          <article class="serv">
+            <div class="service-info">
+              <h2 class="service-title">database development</h2>
+            </div>
+            <div class="service-details">
+              <div class="service-image">
+                <img
+                  src="img/services/database.jpg"
+                  alt="java programming"
+                  class="service-pic"
+                />
+              </div>
+              <div class="service-description">
+                <p>
+                  Database managment is the most needed skill for the backend of lots of applications. We are experienced with database development using DDL, DML, TCL, and SQL/PSM. Also we support different DBMS products such Oracle SQL Server, MS SQL Server, PostgreSQL, MySql, MS Access.
+                </p>
+                <a href="https://www.ecocyrus.com/contact" class="black-btn serv-btn">Hire Us</a>
+              </div>
+            </div>
+          </article>
+          <!-- end of single service -->
+        </div>
       </div>
     </section>
-    <!-- end of contact -->
+    <!-- end of services -->
 
     <!-- support section -->
     <section class="support">
@@ -209,7 +231,7 @@
     <!-- Owl Carousel -->
     <script src="owl/owl.carousel.min.js"></script>
     <!-- Contact JavaScript -->
-    <script src="js/contact.js"></script>
+    <script src="js/services.js"></script>
     <!-- Main JavaScript -->
     <script src="js/script.js"></script>
   </body>
