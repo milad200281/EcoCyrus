@@ -984,10 +984,12 @@ body {
 .project-title {
   font-size: 0.9rem;
   margin-bottom: 0.7rem;
+  text-transform: capitalize;
 }
 
 .project-subtitle {
   font-size: 0.8rem;
+  text-transform: capitalize;
 }
 
 .project:hover .project-photo {
@@ -1085,7 +1087,8 @@ body {
   .projects-container {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "i1 i1 i2 i3 i3"
+    grid-template-areas: 
+      "i1 i1 i2 i3 i3"
       "i1 i1 i4 i5 i5"
       "i6 i7 i7 i5 i5"
       "i6 i8 i9 i9 i10";
