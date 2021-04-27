@@ -142,6 +142,22 @@ body {
 }
 
 /* end of black button */
+/* Pop up feedback success */
+.popup-feedback {
+  position: fixed;
+  top: 20%;
+  right: 50%;
+  min-width: 300px;
+  transform: translateX(50%);
+  text-align: center;
+  background: rgba(172, 255, 47, 0.5);
+  color: darkgreen;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+
+}
+
+/* end of Pop up feedback success */
 /* nav */
 .nav {
   display: none;
@@ -1202,6 +1218,8 @@ body {
   animation: pulse 2s infinite;
 }
 
+.chat-box-hide {}
+
 .chat-box-pop-icon {
   font-size: 1.6rem;
   color: var(--mainBlue);
@@ -1236,6 +1254,7 @@ body {
     transform: scale(1.1);
   }
 }
+
 @media screen and (min-width: 786px) {
   .chat-box-pop-tooltip {
     font-size: 1rem;
@@ -1253,4 +1272,124 @@ body {
     font-size: 2rem;
   }
 }
+
+.chat-box {
+  position: fixed;
+  right: 0;
+  bottom: 3rem;
+  display: none;
+}
+
+.chat-box-title {
+  position: absolute;
+  left: 2rem;
+  top: 1.2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: var(--mainBlue);
+}
+
+.chat-box-close {
+  color: var(--mainBlue);
+  position: absolute;
+  right: 2rem;
+  top: 1.2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: var(--quickTransition);
+}
+
+.chat-box-close:hover {
+  color: var(--darkGrey);
+}
+
+.contact-form {
+  display: grid;
+  background: var(--sectionLightGrey);
+  grid-template-columns: 1fr;
+  padding: 3rem 1rem;
+  border-radius: 3rem;
+  border: 7px groove var(--mainYellow);
+  justify-content: center;
+  align-items: center;
+
+}
+
+.form-input {
+  padding: 0.5rem;
+  background: transparent;
+  margin: 1rem 1rem 0.5rem 0;
+  border: none;
+  outline-offset: 3px;
+  outline-color: var(--lightBlue);
+  outline-width: 1rem;
+  border-bottom: 2px groove var(--mainYellow);
+  border-left: 2px groove var(--mainYellow);
+  border-bottom-left-radius: 0.5rem;
+
+}
+
+#form-message {
+  border: 2px groove var(--mainYellow);
+  border-radius: 0.5rem;
+  margin-right: 0;
+  width: 90%;
+}
+
+.chat-submit-btn {
+  display: block;
+  margin: 0 auto;
+  left: 40%;
+  position: absolute;
+  background: var(--mainYellow);
+  color: var(--mainBlue);
+  font-size: 1.1rem;
+  outline: none;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  border: 2px solid var(--mainBlue);
+}
+
+.form-error {
+  display: block;
+  font-size: 0.8rem;
+  color: red;
+  text-decoration: underline;
+}
+
+
+
+@media screen and (max-height:562px) {
+  .chat-box {
+    bottom: 5rem;
+    right: 2rem;
+  }
+
+  .form-input {
+    font-size: 0.7rem;
+  }
+
+  .contact-form {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (min-width:782px) {
+  .chat-box {
+    bottom: 0rem;
+    right: 2rem;
+  }
+
+  .contact-form {
+    grid-template-columns: auto 1fr;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem
+  }
+
+  .form-submit-btn {
+    font-size: 1.2rem;
+    left: 70%;
+  }
+}
+
 /* end of chat box pop up */
