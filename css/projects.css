@@ -1,0 +1,147 @@
+body {
+    background: var(--sectionLightGrey);
+}
+
+.nav {
+    background: var(--lightGrey);
+    transition: var(--fastTransition);
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow: -8px 10px 25px -5px rgba(0, 0, 0, 0.75);
+}
+
+/* projects */
+.projects {
+    padding: 6rem 0 4rem 0;
+}
+
+.projects-parag {
+    max-width: 80%;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.projects-parag::first-letter {
+    color: var(--mainBlue);
+    font-weight: bold;
+    padding-left: 1.5rem;
+}
+
+.projects-body-container {
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+
+}
+
+.proj {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    background: var(--lightGrey);
+    border-radius: 3rem;
+    margin: 0 auto;
+    border: 7px outset var(--darkBlue);
+    transition: var(--mainTransition);
+}
+
+.proj {
+    overflow: hidden;
+}
+
+.proj-photo {
+    width: 100%;
+    height: 100%;
+}
+
+.proj-body {
+    padding: 1rem 1rem 2rem 1rem;
+    width: 95%;
+}
+
+.proj-info {
+    padding: 1rem 0;
+    padding-top: 0;
+}
+
+.proj-icon {
+    color: var(--mainBlue);
+    font-size: 1.2rem;
+    transition: var(--mainTransition);
+}
+
+.proj-title {
+    color: var(--mainBlue);
+    text-transform: capitalize;
+    transition: var(--mainTransition);
+}
+
+.proj-author,
+.proj-date,
+.proj-team {
+    text-transform: capitalize;
+    padding: 0.7rem;
+    padding-bottom: 0;
+    color: var(--mainBlack);
+}
+
+.proj-parag::first-letter {
+    padding-left: 1.5rem;
+}
+
+.proj-more {
+    background: var(--lightBlue);
+    padding: 0.7rem;
+    border-radius: 3rem;
+    float: right;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: var(--darkBlue);
+    cursor: pointer;
+    border: 2px solid var(--darkBlue);
+    transition: var(--fastTransition);
+    text-transform: capitalize;
+}
+
+.proj-more:hover {
+    background: var(--darkBlue);
+    color: var(--lightBlue);
+    border: 2px solid var(--lightBlue);
+}
+
+.proj:hover {
+    transform: scale(1.05);
+    background: var(--mainWhite);
+    border-color: var(--lightBlue);
+}
+
+.proj:hover .proj-title {
+    color: var(--mainYellow);
+}
+.proj:hover .proj-icon {
+    color: var(--mainYellow);
+}
+
+@media screen and (min-width:748px) {
+    .projects-parag {
+        font-size: 1.4rem;
+    }
+
+    .projects-body-container {
+        width: 80%;
+    }
+
+    .proj {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+
+}
+
+@media screen and (min-width:992px) {}

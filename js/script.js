@@ -60,7 +60,6 @@ $(document).ready(function () {
         }
         if (valid) {
             this.submit();
-            this.reset();
         } else {
             e.preventDefault();
             $("#subs-email-error").fadeIn(400);
