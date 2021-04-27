@@ -87,14 +87,15 @@
           <p class="about-text">
             EcoCyrus is where the dreams of the owner of it, Milad Mobini,
             starts. This website is currenlty being used as the mean of online
-            portfolio and getting my name out there. I am be providing different technical
-            services as mentioned in the <a href="https://www.ecocyrus.com/services">servieces page</a>. You can contact me and
-            hire me as a freelancer. My resume has been attached which can be
-            downloaded from the link below. I am a young and enthusiast
-            programmer who is eager to learn and is expanding his knowledge
-            continuously. The future hope of this website is to be an AI company
-            helping to bring humanity and artificial intelligence one step
-            closer to each other.
+            portfolio and getting my name out there. I am be providing different
+            technical services as mentioned in the
+            <a href="https://www.ecocyrus.com/services">servieces page</a>. You
+            can contact me and hire me as a freelancer. My resume has been
+            attached which can be downloaded from the link below. I am a young
+            and enthusiast programmer who is eager to learn and is expanding his
+            knowledge continuously. The future hope of this website is to be an
+            AI company helping to bring humanity and artificial intelligence one
+            step closer to each other.
           </p>
           <div class="about-btns">
             <a
@@ -127,7 +128,10 @@
       </div>
       <!-- end of title -->
       <div class="support-center">
-        <a href="https://gf.me/u/zks3h5" target="_blank" class="support-btn support-btn-left"
+        <a
+          href="https://gf.me/u/zks3h5"
+          target="_blank"
+          class="support-btn support-btn-left"
           >Support Us</a
         >
         <a
@@ -186,6 +190,78 @@
       </p>
     </footer>
     <!-- end of footer -->
+    <!-- chat box pop up -->
+    <div class="chat-box-pop">
+      <i class="fas fa-comments chat-box-pop-icon"></i>
+      <div class="chat-box-pop-tooltip">contact us now</div>
+    </div>
+    <div class="chat-box">
+      <div class="chat-box-container">
+        <i class="far fa-times-circle chat-box-close"></i>
+        <h3 class="chat-box-title">send us a message now!</h3>
+        <form
+          action="https://formspree.io/f/xvovldld"
+          method="POST"
+          class="contact-box-form"
+        >
+          <div class="form-info">
+            <input
+              type="text"
+              name="firstname"
+              id="form-firstname"
+              class="form-input-box"
+              placeholder="First Name"
+            />
+            <span class="form-error" id="error-fname"> </span>
+            <input
+              type="text"
+              name="lastname"
+              id="form-lastname"
+              class="form-input-box"
+              placeholder="Last Name"
+            />
+            <span class="form-error" id="error-lname"> </span>
+            <input
+              type="email"
+              name="email"
+              id="form-email"
+              class="form-input-box"
+              placeholder="Email"
+            />
+            <span class="form-error" id="error-email"> </span>
+            <input
+              type="text"
+              name="subject"
+              id="form-subject"
+              class="form-input-box"
+              placeholder="Subject"
+            />
+            <span class="form-error" id="error-subject"> </span>
+          </div>
+          <div class="form-detail">
+            <textarea
+              name="message"
+              id="form-message"
+              class="form-input-box"
+              placeholder="Message"
+              cols="50"
+              rows="10"
+            ></textarea>
+            <span class="form-error" id="error-msg"> </span>
+            <button
+              type="submit"
+              name="submit_contact"
+              id="form-submit"
+              class="chat-submit-btn"
+            >
+              <i class="fas fa-paper-plane"></i> send
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- end of chat box pop up -->
+    <!-- END OF HTML -->
 
     <!-- Google JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -193,5 +269,7 @@
     <script src="owl/owl.carousel.min.js"></script>
     <!-- Main JavaScript -->
     <script src="js/script.js"></script>
+    <!-- ChatBox JavaScript -->
+    <script src="js/chatbox.js"></script>
   </body>
 </html>

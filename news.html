@@ -9,11 +9,11 @@
       content="eco, cyrus, EcoCyrus, ai, tech, technology, smart, database, programming, code, future, skills, programming, code, talent, bug, html, css, java, python"
     />
     <meta name="author" content="Milad Mobini" />
-    <title>EcoCyrus || Our Services</title>
+    <title>EcoCyrus || What's New</title>
     <!-- main style css -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Services css -->
-    <link rel="stylesheet" href="css/services.css" />
+    <!-- News css -->
+    <link rel="stylesheet" href="css/news.css" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -63,97 +63,69 @@
       </div>
     </nav>
     <!-- end of nav -->
-    <!-- services -->
-    <section class="services">
+    <!-- news info -->
+    <section class="news-info">
       <!-- title -->
       <div class="title">
         <div class="title-container">
-          <i class="fas fa-cogs title-icon"></i>
-          <h2 class="title-text">our services</h2>
+          <i class="fas fa-bell title-icon"></i>
+          <h2 class="title-text">Our Channel</h2>
         </div>
         <div class="title-underline"></div>
       </div>
       <!-- end of title -->
-      <div class="services-center">
-        <div class="services-info">
-          <p class="service-parag">We offer different services from java application to web and database development. To hire us, get more information, or for the pricing please don't hesitate to contact us. By simply clicking on each service you can get more information about it. </p>
-        </div>
-
-        <div class="services-contain">
-          <!-- single service -->
-          <article class="serv">
-            <div class="service-info">
-              <h2 class="service-title">java applications</h2>
-            </div>
-            <div class="service-details">
-              <div class="service-image">
-                <img
-                  src="img/services/java-programming.jpg"
-                  alt="java programming"
-                  class="service-pic"
-                />
-              </div>
-              <div class="service-description">
-                <p>
-                  We provide Java applications with Java Swing or JavaFX for the graphical user interface, and a backend of wide variety of java APIs such as net, nio, and JDBC. The codes are fully commented and unit test files will also be provided.
-                </p>
-                <a href="https://www.ecocyrus.com/contact" class="black-btn serv-btn">Hire Us</a>
-              </div>
-            </div>
-          </article>
-          <!-- end of single service -->
-          <!-- single service -->
-          <article class="serv">
-            <div class="service-info">
-              <h2 class="service-title">web development</h2>
-            </div>
-            <div class="service-details">
-              <div class="service-image">
-                <img
-                  src="img/services/web-design.jpg"
-                  alt="java programming"
-                  class="service-pic"
-                />
-              </div>
-              <div class="service-description">
-                <p>
-                  We provide a wide range of web development skills, from static fully responsive websites to E-commerce website with database and CMS (Content management system) for working with the data. We also provide secure websites using PHP and we use a wide variety of APIs and CDNs in our projects. Our web development skills include PHP, JavaScript, CSS, HTML, JQuery, and Boostrap. 
-                </p>
-                <a href="https://www.ecocyrus.com/contact" class="black-btn serv-btn">Hire Us</a>
-              </div>
-            </div>
-          </article>
-          <!-- end of single service -->
-          <!-- single service -->
-          <article class="serv">
-            <div class="service-info">
-              <h2 class="service-title">database development</h2>
-            </div>
-            <div class="service-details">
-              <div class="service-image">
-                <img
-                  src="img/services/database.jpg"
-                  alt="java programming"
-                  class="service-pic"
-                />
-              </div>
-              <div class="service-description">
-                <p>
-                  Database managment is the most needed skill for the backend of lots of applications. We are experienced with database development using DDL, DML, TCL, and SQL/PSM. Also we support different DBMS products such Oracle SQL Server, MS SQL Server, PostgreSQL, MySql, MS Access.
-                </p>
-                <a href="https://www.ecocyrus.com/contact" class="black-btn serv-btn">Hire Us</a>
-              </div>
-            </div>
-          </article>
-          <!-- end of single service -->
+      <!-- news details -->
+      <div class="news-container">
+        <p class="news-intro">
+          Here at this page, you can view all of the news regarding to EcoCyrus
+          and our team. Make sure to subscribe to our channel to not miss any
+          event.
+        </p>
+        <div class="news-subscription">
+          <form
+            action="https://formspree.io/f/xvovldld"
+            method="POST"
+            class="news-form"
+            id="subscribe-channel-form"
+          >
+            <span class="news-email-error" id="subs-email-error"></span>
+            <input
+              type="email"
+              class="news-email-input"
+              name="subscribe-email"
+              id="news-letter-email"
+              placeholder="Email"
+              autocomplete="true"
+            />
+            <input
+              type="submit"
+              value="subscribe"
+              class="subscribe-submit"
+              id="news-letter-submit"
+              name="subscribe_news"
+            />
+          </form>
         </div>
       </div>
+      <!-- end of news details -->
     </section>
-    <!-- end of services -->
-    <div class="sample-works">
-      <p class="sample-text">Check out our projects page for sample works</p>
-      <a href="https://www.ecocyrus.com/projects" class="sample-link white-btn">view all projects</a>
-    </div>
+    <!-- end of news info-->
+    <!-- news info -->
+    <section class="news-body">
+      <!-- title -->
+      <div class="title">
+        <div class="title-container">
+          <i class="fas fa-newspaper title-icon"></i>
+          <h2 class="title-text">what's new</h2>
+        </div>
+        <div class="title-underline"></div>
+      </div>
+      <!-- end of title -->
+      <!-- news details -->
+      <div class="news-container"></div>
+      <!-- end of news details -->
+    </section>
+    <!-- end of news info-->
 
     <!-- support section -->
     <section class="support">
@@ -306,11 +278,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Owl Carousel -->
     <script src="owl/owl.carousel.min.js"></script>
-    <!-- Contact JavaScript -->
-    <script src="js/services.js"></script>
     <!-- Main JavaScript -->
     <script src="js/script.js"></script>
-        <!-- ChatBox JavaScript -->
+    <!-- ChatBox JavaScript -->
     <script src="js/chatbox.js"></script>
   </body>
 </html>

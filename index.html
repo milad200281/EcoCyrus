@@ -117,7 +117,7 @@
                   finished, and it's running. You can now explore our skills,
                   projects, services and contact us.
                 </p>
-                <a href="#" class="news-slide-btn white-btn">read more</a>
+                <a href="https://www.ecocyrus.com/news#n1" class="news-slide-btn white-btn">read more</a>
               </div>
             </div>
           </article>
@@ -131,7 +131,7 @@
                 <p class="news-slide-text">
                   Make sure to check our older news too.
                 </p>
-                <a href="#" class="news-slide-btn white-btn">check all</a>
+                <a href="https://www.ecocyrus.com/news" class="news-slide-btn white-btn">check all</a>
               </div>
             </div>
           </article>
@@ -147,20 +147,24 @@
             class="news-letter-form"
             action="https://formspree.io/f/xvovldld"
             method="POST"
+            id="subscribe-channel-form"
           >
+            <span class="news-letter-email-error" id="subs-email-error"
+              ></span
+            >
             <input
               type="email"
-              name="email"
+              name="subscribe-email"
               id="news-letter-email"
               class="news-letter-email"
               placeholder="your email"
-              required
             />
             <input
               type="submit"
-              value="Submit"
+              value="subscribe"
               id="news-letter-submit"
               class="news-letter-submit"
+              name="subscribe_news"
             />
           </form>
         </div>
