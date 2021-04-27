@@ -115,5 +115,84 @@ body {
 }
 
 .news-body {
+    padding-bottom: 3rem;
     background: var(--sectionLightGrey);
+}
+
+.news-body-container {
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+
+}
+.single-news{
+    background: var(--lightGrey);
+    border-radius: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 0 auto;
+    border: 2px outset var(--darkBlue);
+    transition: var(--mainTransition);
+}
+.single-news{
+    overflow: hidden;
+}
+.single-news-photo {
+    width: 100%;
+    height: 100%;
+}
+.single-news-body{
+    padding: 1rem 1rem 2rem 1rem;
+    width: 95%;
+}
+.single-news-info{
+    padding: 1rem 0;
+    padding-top: 0;
+}
+.single-news-icon{
+    color: var(--mainBlue);
+    font-size: 1.2rem;
+}
+.single-news-title{
+    color: var(--darkBlue);
+    text-transform: capitalize;
+}
+.single-news-author,
+.single-news-date {
+    padding: 0.7rem;
+    padding-bottom: 0;
+    color: var(--mainBlack);
+}
+.single-new-parag::first-letter{
+    padding-left: 1.5rem;
+}
+.single-news-more{
+    background: var(--lightBlue);
+    padding: 0.7rem;
+    border-radius: 3rem;
+    float: right;
+    margin-top: 1rem;
+    color: var(--darkBlue);
+    cursor: pointer;
+    border: 2px solid var(--darkBlue);
+    transition: var(--fastTransition);
+}
+.single-news-more:hover{
+    background: var(--darkBlue);
+    color: var(--lightBlue);
+    border: 2px solid var(--lightBlue);
+}
+
+.single-news:hover{
+    background: var(--mainWhite);
+    border-color: var(--lightBlue);
+}
+
+@media screen and (min-width:562px) {
+    .news-body-container {
+        width: 80%;
+    }
+
 }
