@@ -1171,12 +1171,18 @@ body {
 
   .chat-box-pop-tooltip {
     font-size: 1rem;
+    padding: 0.5rem;
+    width: 150px;
   }
 
   .chat-box-pop {
     padding: 1rem;
     bottom: 7%;
     right: 5%;
+  }
+
+  .chat-box-pop-icon {
+    font-size: 2rem;
   }
 }
 
@@ -1185,7 +1191,7 @@ body {
 .chat-box-pop {
   position: fixed;
   background: var(--mainYellow);
-  padding: 0.8rem;
+  padding: 0.7rem;
   border-radius: 5rem;
   border: 3px solid var(--mainBlack);
   z-index: 500;
@@ -1197,7 +1203,7 @@ body {
 }
 
 .chat-box-pop-icon {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: var(--mainBlue);
 }
 
@@ -1205,8 +1211,8 @@ body {
   text-transform: capitalize;
   position: absolute;
   background: var(--mainBlack);
-  padding: 0.5rem;
-  width: 150px;
+  padding: 0.3rem;
+  width: 100px;
   text-align: center;
   border-radius: 1rem;
   transform: translate(-40%, 60%);
@@ -1214,7 +1220,7 @@ body {
   transition: var(--quickTransition);
   visibility: hidden;
   border: 1px solid var(--mainWhite);
-  font-size: 0.5;
+  font-size: 0.7rem;
 }
 
 .chat-box-pop:hover {
@@ -1230,5 +1236,21 @@ body {
     transform: scale(1.1);
   }
 }
+@media screen and (min-width: 786px) {
+  .chat-box-pop-tooltip {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 150px;
+  }
 
+  .chat-box-pop {
+    padding: 1rem;
+    bottom: 7%;
+    right: 5%;
+  }
+
+  .chat-box-pop-icon {
+    font-size: 2rem;
+  }
+}
 /* end of chat box pop up */
