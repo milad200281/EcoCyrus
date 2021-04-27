@@ -1,5 +1,5 @@
 body {
-    background: var(--sectionLightGrey);
+    background: var(--sectionDarkGrey);
 }
 
 .nav {
@@ -16,6 +16,8 @@ body {
 .services {
     padding: 7rem 0 4rem 0;
     background: var(--sectionLightGrey);
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
 }
 
 .services-center {
@@ -25,7 +27,7 @@ body {
 
 .services-info {
     font-size: 1.1rem;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     margin-bottom: 2rem;
 }
 
@@ -92,9 +94,39 @@ body {
     margin: 1rem auto;
 }
 
+.sample-works {
+    background: var(--sectionDarkGrey);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.sample-text {
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--mainBlue);
+}
+
+.sample-link {
+    display: block;
+    color: var(--mainBlack);
+    background: var(--mainYellow);
+    border-color: var(--mainBlack);
+}
+
+.sample-link:hover {
+    color: var(--mainYellow);
+    background: var(--mainBlack);
+    border-color: var(--mainYellow);
+}
+
 @media screen and (min-width: 992px) {
     .services-info {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .service-info {
@@ -123,4 +155,14 @@ body {
     .service-description p {
         padding-bottom: 1rem;
     }
+    .sample-text {
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+}
+
+.support {
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+    padding-top: 1.5rem;
 }
