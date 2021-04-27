@@ -19,7 +19,7 @@ $(document).ready(function () {
     //if the user have tried
     let tried = false;
     //listener on submit button
-    $(".contact-form").submit(function (e) {
+    $(".contact-box-form").submit(function (e) {
         e.preventDefault();
         //set tried to true
         tried = true;
@@ -31,7 +31,7 @@ $(document).ready(function () {
             $(".chat-box-pop").fadeIn(200);
         }
     });
-    $(".form-input").blur(function () {
+    $(".form-input-box").blur(function () {
         if (tried) {
             validateInput();
         }

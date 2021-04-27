@@ -1213,7 +1213,7 @@ body {
   z-index: 500;
   bottom: 7%;
   right: 7%;
-  opacity: 0.8;
+  opacity: 0.75;
   transition: var(--fastTransition);
   animation: pulse 2s infinite;
 }
@@ -1301,7 +1301,7 @@ body {
   color: var(--darkGrey);
 }
 
-.contact-form {
+.contact-box-form {
   display: grid;
   background: var(--sectionLightGrey);
   grid-template-columns: 1fr;
@@ -1313,7 +1313,7 @@ body {
 
 }
 
-.form-input {
+.form-input-box {
   padding: 0.5rem;
   background: transparent;
   margin: 1rem 1rem 0.5rem 0;
@@ -1363,7 +1363,7 @@ body {
     right: 2rem;
   }
 
-  .contact-form {
+  .contact-box-form {
     grid-template-columns: auto 1fr;
     column-gap: 0.5rem;
     row-gap: 0.5rem
@@ -1380,11 +1380,12 @@ body {
     right: 2rem;
   }
 
-  .form-input {
+  .form-input-box {
     font-size: 0.7rem;
   }
 
-  .contact-form {
+  .contact-box-form {
+     grid-template-columns: auto 1fr;
     padding: 2rem 1rem;
   }
 }
