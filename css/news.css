@@ -128,10 +128,11 @@ body {
 
 }
 .single-news{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
     background: var(--lightGrey);
     border-radius: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
     margin: 0 auto;
     border: 2px outset var(--darkBlue);
     transition: var(--mainTransition);
@@ -190,9 +191,13 @@ body {
     border-color: var(--lightBlue);
 }
 
-@media screen and (min-width:562px) {
+@media screen and (min-width:648px) {
     .news-body-container {
         width: 80%;
+    }
+    .single-news {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
     }
 
 }
