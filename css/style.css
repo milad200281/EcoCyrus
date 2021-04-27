@@ -1218,8 +1218,6 @@ body {
   animation: pulse 2s infinite;
 }
 
-.chat-box-hide {}
-
 .chat-box-pop-icon {
   font-size: 1.6rem;
   color: var(--mainBlue);
@@ -1359,24 +1357,9 @@ body {
 
 
 
-@media screen and (max-height:562px) {
-  .chat-box {
-    bottom: 5rem;
-    right: 2rem;
-  }
-
-  .form-input {
-    font-size: 0.7rem;
-  }
-
-  .contact-form {
-    padding: 2rem 1rem;
-  }
-}
-
 @media screen and (min-width:782px) {
   .chat-box {
-    bottom: 0rem;
+    bottom: 5rem;
     right: 2rem;
   }
 
@@ -1391,5 +1374,18 @@ body {
     left: 70%;
   }
 }
+@media screen and (max-height:562px) {
+  .chat-box {
+    bottom: 0rem;
+    right: 2rem;
+  }
 
+  .form-input {
+    font-size: 0.7rem;
+  }
+
+  .contact-form {
+    padding: 2rem 1rem;
+  }
+}
 /* end of chat box pop up */
