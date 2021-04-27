@@ -393,9 +393,10 @@ body {
   display: flex;
   flex-wrap: nowrap;
   width: 200%;
-  animation: slideShow 15s infinite;
 }
-
+.animate-news{
+  animation: slideShow 5s infinite;
+}
 @keyframes slideShow {
 
   0% {

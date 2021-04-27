@@ -27,17 +27,17 @@ $(document).ready(function () {
         $(".popup-feedback").fadeOut(2000);
     },2000);
 
-    // $('.nonloop').owlCarousel({
-    //     center: true,
-    //     items: 1,
-    //     loop: false,
-    //     margin: 10,
-    //     responsive: {
-    //         600: {
-    //             items: 1
-    //         }
-    //     }
-    // });
+    //  #####***** New Owl Carousel ******######
+    $('.owl-news').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        lazyLoad: true,
+        autoplay: true,
+        autoplaySpeed:2000,
+        autoplayTimeout:6000,
+        autoplayHoverPause: true
+    });
 })
 // set date //
 const date = document.getElementById("date").innerHTML = new Date().getFullYear();
