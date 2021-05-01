@@ -96,7 +96,7 @@ body {
   border-radius: 4px;
   border: 2px solid var(--mainBlue);
   background: var(--mainBlue);
-  transition: var(--slowTransition);
+  transition: var(--mainTransition);
 }
 
 .title:hover .title-underline {
@@ -229,6 +229,7 @@ body {
 }
 
 .nav-link a {
+  border-radius: 5rem;
   color: var(--mainWhite);
   transition: var(--fastTransition);
   letter-spacing: var(--mainSpacing);
@@ -1261,7 +1262,7 @@ body {
 
 @keyframes pulse {
   50% {
-    transform: scale(1.1);
+    transform: scale(1.06);
   }
 }
 
