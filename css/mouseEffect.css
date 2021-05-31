@@ -1,0 +1,56 @@
+/* cursor style */
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.cursor--small {
+    width: 6px;
+    height: 6px;
+    left: -2.5px;
+    top: -2.5px;
+    border-radius: 50%;
+    z-index: 11000;
+    background: #fff;
+    display: none;
+}
+
+.cursor--canvas {
+    width: 100vw;
+    height: 100vh;
+    z-index: 12000;
+    display: none;
+}
+
+
+
+@media screen and (min-width: 512px) {
+    .cursor--small {
+        display: block;
+    }
+
+    .cursor--canvas {
+        display: block;
+    }
+
+    /* hide cursor */
+    body, body a, body div, body button, i {
+        cursor: none!important;
+    }
+}
+
+@media screen and (max-height: 512px) {
+    .cursor--small {
+        display: none;
+    }
+
+    .cursor--canvas {
+        display: none;
+    }
+
+    body {
+        cursor: default;
+    }
+}

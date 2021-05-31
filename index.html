@@ -18,6 +18,8 @@
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="owl/owl.carousel.min.css" />
     <link rel="stylesheet" href="owl/owl.theme.default.min.css" />
+    <!-- mouseEffect -->
+    <link rel="stylesheet" href="css/mouseEffect.css" />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -35,6 +37,11 @@
   </head>
   <!-- HTML CODE -->
   <body>
+    <!-- The cursor elements -->
+    <div class="cursor cursor--small"></div>
+    <canvas class="cursor cursor--canvas" resize></canvas>
+    <!-- End of cursor elements -->
+
     <!-- nav -->
     <nav class="nav" id="nav">
       <div class="nav-center">
@@ -74,7 +81,8 @@
       <!-- hero -->
       <div class="hero" id="hero">
         <div class="hero-logo">
-          <img loading="lazy"
+          <img
+            loading="lazy"
             class="hero-img"
             src="img/EcoCyrus solo  logo.png"
             alt="EcoCyrus Logo"
@@ -194,7 +202,8 @@
           <!-- single service -->
           <article class="service">
             <a href="https://www.ecocyrus.com/services" class="service-img">
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 class="service-photo"
                 src="img/services/web-design.jpg"
                 alt="web design"
@@ -211,7 +220,8 @@
           <!-- single service -->
           <article class="service">
             <a href="https://www.ecocyrus.com/services" class="service-img">
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 class="service-photo"
                 src="img/services/database.jpg"
                 alt="database management"
@@ -230,7 +240,8 @@
           <!-- single service -->
           <article class="service">
             <a href="https://www.ecocyrus.com/services" class="service-img">
-              <img loading="lazy"
+              <img
+                loading="lazy"
                 class="service-photo"
                 src="img/services/java-programming.jpg"
                 alt="java application"
@@ -456,7 +467,8 @@
       <div class="projects-container">
         <!-- single project -->
         <article class="project project-1">
-          <img loading="lazy"
+          <img
+            loading="lazy"
             class="project-photo"
             src="img/projects/square1.jpg"
             alt="project img"
@@ -475,7 +487,8 @@
         <!-- end of single project -->
         <!-- single project -->
         <article class="project project-2">
-          <img loading="lazy"
+          <img
+            loading="lazy"
             class="project-photo"
             src="img/projects/eco-search.png"
             alt="project img"
@@ -497,7 +510,8 @@
         <!-- end of single project -->
         <!-- single project -->
         <article class="project project-3">
-          <img loading="lazy"
+          <img
+            loading="lazy"
             class="project-photo"
             src="img/projects/websites.jpg"
             alt="project img"
@@ -519,7 +533,8 @@
         <!-- end of single project -->
         <!-- single project -->
         <article class="project project-4">
-          <img loading="lazy"
+          <img
+            loading="lazy"
             class="project-photo"
             src="img/projects/square4.jpg"
             alt="project img"
@@ -541,7 +556,8 @@
         <!-- end of single project -->
         <!-- single project -->
         <article class="project project-5">
-          <img loading="lazy"
+          <img
+            loading="lazy"
             class="project-photo"
             src="img/projects/connect-4.jpg"
             alt="project img"
@@ -563,7 +579,8 @@
         <!-- end of single project -->
         <!-- single project -->
         <article class="project project-6">
-          <img loading="lazy"
+          <img
+            loading="lazy"
             class="project-photo"
             src="img/projects/vertical.jpg"
             alt="project img"
@@ -585,7 +602,8 @@
         <!-- end of single project -->
         <!-- single project -->
         <article class="project project-7">
-          <img loading="lazy"
+          <img
+            loading="lazy"
             class="project-photo"
             src="img/projects/long3.jpg"
             alt="project img"
@@ -607,7 +625,8 @@
         <!-- end of single project -->
         <!-- single project -->
         <article class="project project-8">
-          <img loading="lazy"
+          <img
+            loading="lazy"
             class="project-photo"
             src="img/projects/square5.jpg"
             alt="project img"
@@ -629,7 +648,8 @@
         <!-- end of single project -->
         <!-- single project -->
         <article class="project project-9">
-          <img loading="lazy"
+          <img
+            loading="lazy"
             class="project-photo"
             src="img/projects/long2.jpg"
             alt="project img"
@@ -651,7 +671,8 @@
         <!-- end of single project -->
         <!-- single project -->
         <article class="project project-10">
-          <img loading="lazy"
+          <img
+            loading="lazy"
             class="project-photo"
             src="img/projects/MySchedule.png"
             alt="project img"
@@ -754,7 +775,7 @@
     </footer>
     <!-- end of footer -->
     <!-- chat box pop up -->
-    <div class="chat-box-pop">
+    <div class="chat-box-pop link--mouse-effect">
       <i class="fas fa-comments chat-box-pop-icon"></i>
       <div class="chat-box-pop-tooltip">contact us now</div>
     </div>
@@ -827,6 +848,12 @@
 
     <!-- Google JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Paper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+    <!-- SimpleNoise.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <!-- MouseEffect -->
+    <script src="js/mouseEffect.js"></script>
     <!-- Owl Carousel -->
     <script src="owl/owl.carousel.min.js"></script>
     <!-- Main JavaScript -->

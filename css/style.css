@@ -109,9 +109,11 @@ body {
   .title-icon {
     font-size: 3.5rem;
   }
+
   .title-text {
     font-size: 2.5rem;
   }
+
   .title:hover .title-underline {
     width: 300px;
   }
@@ -1088,7 +1090,7 @@ body {
   .projects-container {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
       "i1 i1 i2 i3 i3"
       "i1 i1 i4 i5 i5"
       "i6 i7 i7 i5 i5"
@@ -1193,7 +1195,7 @@ body {
   font-size: 1.9rem;
   margin-right: 1.5rem;
   color: var(--mainWhite);
-  transition: var(--mainTransition);
+  transition: var(--quickTransition);
 }
 
 .footer-icon:hover {
@@ -1407,5 +1409,9 @@ body {
     padding: 2rem 1rem;
   }
 }
-
+@media screen and (min-width:512px) {
+  .chat-box-close {
+    cursor: none;
+  }
+}
 /* end of chat box pop up */
