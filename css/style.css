@@ -109,9 +109,11 @@ body {
   .title-icon {
     font-size: 3.5rem;
   }
+
   .title-text {
     font-size: 2.5rem;
   }
+
   .title:hover .title-underline {
     width: 300px;
   }
@@ -339,6 +341,7 @@ body {
   color: var(--mainWhite);
   letter-spacing: var(--mainSpacing);
   margin-bottom: 4rem;
+  text-align: left;
 }
 
 .hero-btn {
@@ -370,16 +373,16 @@ body {
   }
 
   .hero-img {
-    width: 40vw;
+    width: 35vw;
   }
 
   .hero-title {
     margin-top: 15vh;
-    font-size: 5rem;
+    font-size:4rem;
   }
 
   .hero-text {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 5rem;
   }
 
@@ -393,6 +396,9 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4)),
       url(../img/hero-bg.jpg)center/cover no-repeat fixed;
   }
+    .hero-title {
+      font-size: 5rem;
+    }
 }
 
 @media screen and (max-height: 500px) {
@@ -1088,7 +1094,7 @@ body {
   .projects-container {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
       "i1 i1 i2 i3 i3"
       "i1 i1 i4 i5 i5"
       "i6 i7 i7 i5 i5"
@@ -1193,7 +1199,7 @@ body {
   font-size: 1.9rem;
   margin-right: 1.5rem;
   color: var(--mainWhite);
-  transition: var(--mainTransition);
+  transition: var(--quickTransition);
 }
 
 .footer-icon:hover {
@@ -1405,6 +1411,12 @@ body {
   .contact-box-form {
     grid-template-columns: auto 1fr;
     padding: 2rem 1rem;
+  }
+}
+
+@media screen and (min-width:512px) {
+  .chat-box-close {
+    cursor: none;
   }
 }
 
