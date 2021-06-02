@@ -8,7 +8,8 @@ const typeStrings = (function () {
         pauseDelay: 1000,
         deleteLastString: true,
         loop: true,
-        loopHold : 1500
+        loopHold: 1500,
+        loopStartIndex: 0
     }
 
     function type() {
@@ -44,7 +45,7 @@ const typeStrings = (function () {
                         //if it's the last letter of the last word when the loop is true
                         if (index == 0 && currentCount + 1 == values.strings.length && values.loop){
                             //reset word count
-                            wordCount = 0;
+                            wordCount = values.loopStartIndex;;
                             //reset time
                             currentTypeSpeed = values.loopHold;
                             //call the function again
@@ -74,4 +75,5 @@ typeStrings.values.cssSelector = '.typeHere'
 typeStrings.values.typeSpeed = 70
 // typeStrings.values.deleteLastString = false
 // typeStrings.values.loop = false
+typeStrings.values.loopStartIndex = 1;
 typeStrings.type()

@@ -378,7 +378,7 @@ body {
 
   .hero-title {
     margin-top: 15vh;
-    font-size:4rem;
+    font-size: 4rem;
   }
 
   .hero-text {
@@ -396,9 +396,10 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.4)),
       url(../img/hero-bg.jpg)center/cover no-repeat fixed;
   }
-    .hero-title {
-      font-size: 5rem;
-    }
+
+  .hero-title {
+    font-size: 5rem;
+  }
 }
 
 @media screen and (max-height: 500px) {
@@ -527,14 +528,6 @@ body {
 
 }
 
-/* news images */
-.no-news-img {
-  background: url(../img/news.jpg) center/cover no-repeat;
-}
-
-.website-ready-img {
-  background: url(../img/city-line.jpg) center/cover no-repeat;
-}
 
 /* end of News */
 /* news letter subscribe */
