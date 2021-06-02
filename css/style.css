@@ -766,14 +766,18 @@ body {
   transition: var(--fastTransition);
 }
 
-.skill-white {
+.skill:nth-of-type(2n+1) {
   background: var(--mainWhite);
   color: var(--mainBlue);
 }
 
-.skill-black {
+.skill:nth-of-type(2n) {
   background: var(--mainBlack);
   color: var(--lightBlue);
+}
+
+.skill:nth-of-type(2n) .skill-text {
+  color: var(--lightGrey);
 }
 
 .skill-logo {
@@ -813,12 +817,38 @@ body {
   font-size: 0.9rem;
 }
 
-.skill-black .skill-text {
-  color: var(--lightGrey);
+
+.btn {
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  transition: var(--fastTransition);
+  text-transform: uppercase;
+  padding: 0.6rem;
 }
 
-.skill .white-btn,
-.skill .black-btn {
+.skill:nth-of-type(2n) .btn {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  border: 2px solid var(--mainWhite);
+}
+
+.skill:nth-of-type(2n) .btn:hover {
+  color: var(--mainWhite);
+  background: var(--mainBlack);
+}
+
+.skill:nth-of-type(2n+1) .btn {
+  color: var(--mainWhite);
+  background: var(--mainBlack);
+  border: 2px solid var(--mainBlack);
+}
+
+.skill:nth-of-type(2n+1) .btn:hover {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+}
+
+.skill .btn {
   position: absolute;
   font-size: 1rem;
   right: 1rem;
@@ -1421,3 +1451,13 @@ body {
 }
 
 /* end of chat box pop up */
+
+/* observer */
+.loadOnScroll {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.appear {
+  opacity: 1;
+}
