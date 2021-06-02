@@ -528,6 +528,13 @@ body {
 
 }
 
+.no-news-img {
+  background: url(../img/news.jpg) center/cover no-repeat;
+}
+
+.website-dev {
+  background: url(../img/news/underConstruction.jpg) center/cover no-repeat;
+}
 
 /* end of News */
 /* news letter subscribe */
