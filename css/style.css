@@ -1451,3 +1451,13 @@ body {
 }
 
 /* end of chat box pop up */
+
+/* observer */
+.loadOnScroll {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.appear {
+  opacity: 1;
+}
