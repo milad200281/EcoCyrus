@@ -174,9 +174,22 @@ body {
 /* end of Pop up feedback success */
 /* nav */
 .nav {
-  display: none;
+  position: fixed;
+  visibility: hidden;
   background: var(--lightGrey);
   transition: var(--fastTransition);
+  opacity: 0;
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  box-shadow: -8px 10px 25px -5px rgba(0, 0, 0, 0.75);
+}
+
+/* Fixed nav */
+.fixed-nav {
+  opacity: 1;
+  visibility: visible;
 }
 
 .nav-top {
@@ -296,14 +309,6 @@ body {
   }
 }
 
-/* Fixed nav */
-.fixed-nav {
-  display: block;
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  box-shadow: -8px 10px 25px -5px rgba(0, 0, 0, 0.75);
-}
 
 /* end of nav */
 /* Header */

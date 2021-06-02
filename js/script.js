@@ -7,11 +7,11 @@ $(document).ready(function () {
     // #####***** nav fixed ******######
     $(window).scroll(function () {
         let scroll = $(window).scrollTop();
-        if (scroll >= 150) {
-            $('#nav').addClass('fixed-nav');
+        if (scroll >= 200) {
+            $('.nav').addClass('fixed-nav');
         }
         else {
-            $('#nav').removeClass('fixed-nav');
+            $('.nav').removeClass('fixed-nav');
         }
     })
     // #####***** smooth scroll ******######
