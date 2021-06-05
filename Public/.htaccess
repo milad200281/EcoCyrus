@@ -1,0 +1,12 @@
+RewriteEngine on
+
+# rewrites
+RewriteRule ^([a-z]+)$ $1.php [NC,L]
+RewriteRule ^([a-z]+).html$ $1.php [NC,L]
+
+# Handling
+ErrorDocument 404 https://www.ecocyrus.com/404
+RewriteRule ^(404)$ pages/404.php [NC,L]
+
+# access and permission Handling
+RewriteRule ^includes/([a-z\.]*)$ pages/404.php [NC,L]

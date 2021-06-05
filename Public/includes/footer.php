@@ -9,7 +9,7 @@
           </div>
           <!-- footer links -->
           <div class="footer-links">
-              <a href="<?php echo PUBLIC_PATH ?>index" class="footer-link smooth-scroll">home</a>
+              <a href="<?php echo PUBLIC_PATH ?>index" class="footer-link">home</a>
               <a href="<?php echo PUBLIC_PATH ?>services" class="footer-link">services</a>
               <a href="<?php echo PUBLIC_PATH ?>skills" class="footer-link">skills</a>
               <a href="<?php echo PUBLIC_PATH ?>about" class="footer-link">about</a>
