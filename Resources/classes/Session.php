@@ -62,14 +62,31 @@ class Session
             return true;
         }
     }
+    /**
+     * get the user id
+     * @return string user id
+     */
     function get_user_id()
     {
+        return $this->user_id;
     }
+    /**
+     * get the username
+     * @return string username
+     */
     function get_username()
     {
+        return $this->username;
+
     }
+    /**
+     * get the user email
+     * @return string user email
+     */
     function get_user_email()
     {
+        return $this->user_email;
+
     }
     /**
      * return the status of the user
