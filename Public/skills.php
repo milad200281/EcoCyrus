@@ -52,7 +52,7 @@
             <div class="skill-detail">
               <h3 class="skill-subtitle">python</h3>
               <p class="skill-text">
-                Python programming language. Experienced in all fundametals and
+                Python programming language. Experienced in all fundamentals and
                 libraries such as NumPy, Pandas, Scikit-Learn, MATLAB, Keras,
                 TensorFlow. We are also experienced in machine learning with keras
                 and TensorFlow.
@@ -86,7 +86,7 @@
               <h3 class="skill-subtitle">JavaScript</h3>
               <p class="skill-text">
                 JavaScript programming language for making website more responsive
-                and functional. Experienced in all fundametals. Including APIs and
+                and functional. Experienced in all fundamentals. Including APIs and
                 JQuery and many more.
               </p>
             </div>
@@ -118,7 +118,7 @@
               <h3 class="skill-subtitle">css</h3>
               <p class="skill-text">
                 css for styling websites and java applications. Experienced in all
-                fundametals, animations, and creating fully responsive websites.
+                fundamentals, animations, and creating fully responsive websites.
                 Plus Bootstrap and Font Awesome.
               </p>
             </div>

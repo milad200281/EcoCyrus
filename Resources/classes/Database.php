@@ -22,7 +22,8 @@ class Database
     }
     /**
      * run a query on the connection
-     * @param mysqli_result $sql the sql query to be run
+     * @param mysqli_result $sql the sql query to be 
+     * @return mysqli_result the result of the query
      */
     public function query($sql)
     {
