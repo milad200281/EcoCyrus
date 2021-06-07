@@ -22,7 +22,7 @@ class Database
     }
     /**
      * run a query on the connection
-     * @param string $sql the sql query to be run
+     * @param mysqli_result $sql the sql query to be run
      */
     public function query($sql)
     {
@@ -32,7 +32,8 @@ class Database
     /**
      * check the result of a query whether it was success full
      * dies if query fails
-     * @return array the result of the query
+     * @param connection $result result of the query
+     * @return mysqli_result the result of the query
      */
     public function confirm_query($result)
     {
@@ -84,6 +85,11 @@ class Database
     public function insert_id()
     {
         return $this->connection->insert_id;
+    }
+
+    public function affected_rows()     
+    {
+        return $this->connection->affected_rows;
     }
 }
 $database = new Database();
