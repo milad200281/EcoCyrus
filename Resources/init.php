@@ -18,8 +18,8 @@ require_once('functions.php');
 require_once('config.php');
 
 require_once('classes' . DS . 'Database.php');
+require_once('classes' . DS . 'Session.php');
+
 require_once('classes' . DS . 'Table.php');
 require_once('classes' . DS . 'View.php');
 require_once('classes' . DS . 'Login.php');
-
-require_once('classes' . DS . 'Session.php');

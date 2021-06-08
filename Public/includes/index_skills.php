@@ -30,7 +30,6 @@
                           </div>
                       </article>
                       <!-- end of single skill -->
-
                   <?php endwhile; ?>
               </div>
           </div>

@@ -14,6 +14,7 @@
               <a href="<?php echo PUBLIC_PATH ?>skills" class="footer-link">skills</a>
               <a href="<?php echo PUBLIC_PATH ?>about" class="footer-link">about</a>
               <a href="<?php echo PUBLIC_PATH ?>contact" class="footer-link">contact</a>
+              <a href="<?php echo PUBLIC_PATH ?>login" class="footer-link">login</a>
           </div>
           <!-- copyright -->
           <p class="copyright">

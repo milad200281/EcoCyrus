@@ -4,8 +4,14 @@
     <link rel="stylesheet" href="owl/owl.carousel.min.css" />
     <link rel="stylesheet" href="owl/owl.theme.default.min.css" />
     <script src="owl/owl.carousel.min.js"></script>
-
+    <style>
+       .nav {
+        opacity: 0;
+        visibility: hidden;
+      }
+    </style>
     </head>
+
     <body>
       <!-- nav -->
       <?php include(INCLUDES_PATH . 'nav.php') ?>

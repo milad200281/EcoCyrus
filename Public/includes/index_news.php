@@ -61,3 +61,16 @@
           <!-- end of news letter subscribe -->
       </section>
       <!-- end of news section -->
+      <script>
+          //  #####***** News Owl Carousel ******######
+          $('.owl-news').owlCarousel({
+              items: 1,
+              loop: true,
+              margin: 10,
+              lazyLoad: true,
+              autoplay: true,
+              autoplaySpeed: 2000,
+              autoplayTimeout: 6000,
+              autoplayHoverPause: true
+          });
+      </script>

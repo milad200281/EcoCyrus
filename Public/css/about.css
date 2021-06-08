@@ -2,11 +2,6 @@ body {
     background: var(--sectionLightGrey);
 }
 
-.nav {
-    opacity: 1;
-    visibility: visible;
-}
-
 /* about */
 .about {
     padding: 7rem 0 4rem 0;

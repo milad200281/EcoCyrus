@@ -2,12 +2,6 @@ body {
     background: var(--sectionDarkGrey);
 }
 
-.nav {
-    opacity: 1;
-    visibility: visible;
-}
-
-
 /* services */
 .services {
     padding: 7rem 0 4rem 0;

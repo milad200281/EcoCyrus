@@ -2,12 +2,6 @@ body {
     background: var(--sectionLightGrey);
 }
 
-.nav {
-    opacity: 1;
-    visibility: visible;
-}
-
-
 /* projects */
 .projects {
     padding: 6rem 0 4rem 0;

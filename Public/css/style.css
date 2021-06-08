@@ -11,6 +11,7 @@
   --lightBlue: #29d5f3;
   --mainRed: #7b0d1eff;
   --mainYellow: #ffc914;
+  --linkColor: #337ab7;
 
   --sectionBlack: #191919;
   --sectionWhite: #f7f7f7;
@@ -175,10 +176,8 @@ body {
 /* nav */
 .nav {
   position: fixed;
-  visibility: hidden;
   background: var(--lightGrey);
   transition: var(--fastTransition);
-  opacity: 0;
   display: block;
   position: fixed;
   width: 100%;
@@ -188,8 +187,8 @@ body {
 
 /* Fixed nav */
 .fixed-nav {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1!important;
+  visibility: visible !important;
 }
 
 .nav-top {

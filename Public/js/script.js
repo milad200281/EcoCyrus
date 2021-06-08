@@ -27,17 +27,7 @@ $(document).ready(function () {
         $(".popup-feedback").fadeOut(2000);
     }, 2000);
 
-    //  #####***** News Owl Carousel ******######
-    $('.owl-news').owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 10,
-        lazyLoad: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        autoplayTimeout: 6000,
-        autoplayHoverPause: true
-    });
+
 
     //  #####***** News Channel Subscribe ******######
     

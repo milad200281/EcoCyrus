@@ -43,3 +43,24 @@ function redirect403()
 {
     redirect('403');
 }
+
+/**
+ * check if there is a request and it is post with the given value
+ * @param string $value the key in the post request
+ * @return true if it is
+ * @return false if it is not
+ */
+function isPost($value)
+{
+    return $_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["$value"]);
+}
+/**
+ * check if there is a request and it is get with the given value
+ * @param string $value the key in the get request
+ * @return true if it is
+ * @return false if it is not
+ */
+function isGET($value)
+{
+    return $_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET["$value"]);
+}
