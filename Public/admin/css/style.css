@@ -426,6 +426,44 @@ li {
     }
 }
 
+/* General Pages */
+.admin-top-section {
+    padding: 1rem;
+    background: var(--sectionLightGrey);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.admin-top-title {
+    font-size: 1.6rem;
+    font-family: var(--mainFont);
+    padding: 0.5rem 1.2rem;
+    color: var(--mainBlue);
+}
+
+.admin-top-paragraph {
+    padding: 0.5rem 0.1rem;
+    max-width: 700px;
+}
+.admin-body-table{
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.admin-body-section {
+    padding: 0.5rem 0;
+    background: var(--sectionLightGrey);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .admin-top-title {
+        font-size: 2rem
+    }
+}
+
 /* global css */
 
 /* tables */
@@ -515,8 +553,52 @@ th {
 
 td {
     font-weight: 100;
+    transition: var(--quickTransition);
 }
 
-.table-hover>tbody>tr:hover {
-    background-color: #0f0101 !important;
+.table-hover>tbody>.table-row:hover td {
+    background: var(--lightGrey) !important;
+    color: var(--mainBlue) !important;
+
+}
+
+/* add new item button */
+.add-new-item-btn::before {
+    content: "+";
+}
+
+.add-new-item-btn {
+    color: var(--mainWhite);
+    background: var(--lightBlue);
+    padding: 0.2rem;
+    height: 55px;
+    width: 55px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    border: 2px solid var(--lightBlue);
+    border-radius: 50%;
+    transition: var(--quickTransition);
+    text-align: center;
+    display: inline-block;
+    position: fixed;
+    z-index: 50;
+    bottom: 5%;
+    right: 5%;
+    opacity: 0.75;
+}
+
+.add-new-item-btn:hover {
+    color: var(--mainBlue);
+    background: var(--mainWhite);
+    border-color: var(--mainBlue);
+    opacity: 1;
+}
+
+@media screen and (min-width:992px) {
+    .add-new-item-btn {
+        padding: 0.2rem;
+        height: 70px;
+        width: 70px;
+        font-size: 3.3rem;
+    }
 }
