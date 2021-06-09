@@ -17,11 +17,11 @@
     --mYellow: #ffd700;
     --dYellow: #daa520;
 
-    --lOrange: #ffa846;
+    --lOrange: #ffb96a;
     --mOrange: #ff5315;
     --dOrange: #bd3200;
 
-    --lGreen: #adff32;
+    --lGreen: #b9ff50;
     --mGreen: #009200;
     --dGreen: #0a7700;
 
@@ -29,15 +29,15 @@
     --mBlue: #0000ff;
     --dBlue: #000099;
 
-    --lViolet: #c680ff;
-    --mViolet: #7634e0;
+    --lViolet: #d7aafc;
+    --mViolet: #6937b8;
     --dViolet: #8800c2;
 
-    --lPurple: #fbb5fd;
-    --mPurple: #a000a0;
-    --dPurple: #800080;
+    --lPurple: #fdb5e5;
+    --mPurple: #a00055;
+    --dPurple: #800045;
 
-    --lRed: #f07474;
+    --lRed: #f08888;
     --mRed: #ff0000;
     --dRed: #aa0101;
 
@@ -80,7 +80,7 @@ li {
 /* admin */
 .admin {
     position: fixed;
-    z-index: 100!important;
+    z-index: 100 !important;
 }
 
 /* nav */
@@ -102,7 +102,7 @@ li {
     display: flex;
     padding: 0rem 1rem;
     align-items: center;
-    
+
 }
 
 .nav-toggle {
@@ -209,6 +209,7 @@ li {
 .user-drop-down a:hover {
     color: var(--lightBlue);
 }
+
 /* notifications */
 .alert-box {
     position: absolute;
@@ -335,6 +336,8 @@ li {
     float: left;
     width: 150px;
     height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
     background: var(--sectionBlack);
     padding-top: 80px;
     padding-bottom: 1rem;
@@ -370,6 +373,7 @@ li {
         border-bottom-right-radius: 0;
         transform: translateX(0%);
     }
+
     .sidebar-link {
         font-size: 1.2rem;
     }
@@ -383,7 +387,8 @@ li {
     padding-top: 80px !important;
     padding: 1rem;
     background: var(--sectionWhite);
-    height: 100vh;
+    min-height: 100vh;
+    display: block;
 }
 
 @media screen and (min-width:992px) {
@@ -392,6 +397,36 @@ li {
     }
 }
 
+/* footer */
+
+.footer {
+    background: var(--sectionBlack);
+    color: var(--mainWhite);
+    text-align: center;
+    padding: 2rem;
+    width: 100vw;
+}
+
+.copyright {
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    letter-spacing: var(--mainSpacing);
+    display: inline-block;
+}
+
+@media screen and (min-width: 992px) {
+    .footer {
+        width: 100%;
+    }
+
+    .copyright {
+        transform: translateX(5%);
+        font-size: 1.1rem;
+    }
+}
+
+/* global css */
 
 /* tables */
 
